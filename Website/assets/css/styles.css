@@ -134,7 +134,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(243,242,236,.86);
 /* steps */
 .process{background:var(--ink);color:var(--bone)}
 .process .head h2{color:var(--bone)} .process .head p{color:#b9bdb0}
-.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .process-step{position:relative;background:var(--ink-2);border:1px solid var(--line-d);
   border-radius:var(--r);padding:34px}
 .process-step .step-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
@@ -142,6 +142,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(243,242,236,.86);
 .process-step .num{font-size:15px;font-weight:700;color:var(--volt);letter-spacing:.06em}
 .process-step h3{color:var(--bone);margin:0 0 10px}
 .process-step p{color:#b9bdb0;font-size:15.5px}
+.process-step .pillar-meta{margin-top:14px;padding-top:14px;border-top:1px solid var(--line-d);
+  color:var(--slate);font-size:13.5px;font-weight:500}
 
 /* divider motif between sections */
 .divider{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--slate)}
@@ -240,6 +242,7 @@ footer{background:var(--ink);color:#9aa08c;padding:64px 0 40px}
 
 @media (max-width:1100px){
   .about-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
   .contact-side{flex:0 0 38%}
 }
 @media (max-width:880px){
